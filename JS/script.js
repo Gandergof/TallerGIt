@@ -10,7 +10,7 @@ function fillTable() {
     for (i = 0; i < cantEjercicios;i++) {
         numero1 = Math.floor(Math.random() * 10 + 1);
         numero2 = Math.floor(Math.random() * 10 + 1);
-        respuestas.push(numero1 * numero23);//error en la variable debe llamarse numero2
+        respuestas.push(numero1 * numero2);//error en la variable debe llamarse numero2
 
         if (i % 2 == 0) {
             tabla += "<tr bgcolor=red>";
@@ -21,7 +21,7 @@ function fillTable() {
     }
     tabla += "</table>"
     tabla += "<button type=\"button\" onclick=\"solveForm()\">Resolver</button>";
-    document.getElementById("table").innerHTML = tabla;//el elemento se llama table
+    document.getElementById("t").innerHTML = tabla;//el elemento se llama table
 }
 
 function solveForm() {
